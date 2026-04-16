@@ -62,3 +62,7 @@ Thumbs.db
 # 打包输出文件
 Packaged/
 Dist/
+
+*.uasset
+*.umap
+*.mp4
