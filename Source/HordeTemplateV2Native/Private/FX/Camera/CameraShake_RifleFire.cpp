@@ -3,7 +3,7 @@
 // Licensed under the MIT License
 
 #include "CameraShake_RifleFire.h"
-#include "PerlinNoiseCameraShakePattern.h"
+#include "HordeTemplateCameraShakePattern.h"
 
 /**
  * @file CameraShake_RifleFire.cpp
@@ -11,10 +11,11 @@
  * @author Marc Fraedrich
  */
 
-UCameraShake_RifleFire::UCameraShake_RifleFire()
+UCameraShake_RifleFire::UCameraShake_RifleFire(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
 {
 	// Create Perlin noise pattern for organic weapon kick
-	UPerlinNoiseCameraShakePattern* ShakePattern = CreateDefaultSubobject<UPerlinNoiseCameraShakePattern>(TEXT("ShakePattern"));
+	UHordeTemplateCameraShakePattern* ShakePattern = CreateDefaultSubobject<UHordeTemplateCameraShakePattern>(TEXT("ShakePattern"));
 
 	// Very quick timing - snappy recoil feel
 	ShakePattern->Duration = 0.15f;
