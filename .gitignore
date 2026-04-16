@@ -63,6 +63,7 @@ Thumbs.db
 Packaged/
 Dist/
 
+/Content
 *.uasset
 *.umap
 *.mp4
