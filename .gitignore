@@ -1,11 +1,64 @@
-.vs
 Binaries
-.idea
-Build
-.vsconfig
+DerivedDataCache
 Intermediate
 Saved
+.vscode
+.vs
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
 *.sln
-/.claude
-/DerivedDataCache
-nul
+*.suo
+*.xcodeproj
+*.xcworkspace
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.DesolateIsle.iml
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+
+# UE 核心缓存与编译文件（体积最大的部分，必须忽略）
+Saved/
+Intermediate/
+Binaries/
+DerivedDataCache/
+Build/
+
+# IDE 配置文件（个人本地配置，不需要提交）
+.vs/
+.idea/
+*.sln
+*.xcodeproj
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.pidb
+*.vsidx
+.clangd
+compile_commands.json
+
+# 临时文件与日志
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# 打包输出文件
+Packaged/
+Dist/

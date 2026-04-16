@@ -1,0 +1,12 @@
+# UE 自动生成的：Content 下所有文件走 LFS
+Content/** filter=lfs diff=lfs merge=lfs -text
+
+# 补充：强制 Content 里的小文本文件不走 LFS（节省空间）
+Content/**/*.md !filter !diff !merge text
+Content/**/*.json !filter !diff !merge text
+Content/**/*.txt !filter !diff !merge text
+
+# 补充：项目根目录的大文件也走 LFS（防遗漏）
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
